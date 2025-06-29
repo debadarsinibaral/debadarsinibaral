@@ -1,0 +1,305 @@
+:root,
+[data-bs-theme="dark"] {
+    --bs-primary: #0443F2 !important; /* Primary color */
+    --bs-primary-dark: #FFC0CB !important; /* Primary dark color */
+    --bs-secondary: #E80F88; /* Secondary color */
+    --bs-secondary-dark: #0b9c99; /* Secondary dark color */
+    --bs-black: #000; 
+    --bs-white: #fff;
+    --bs-bg-color: #000;
+    --bs-text-color: #fff; 
+    --bs-text-muted: #aab6c2;
+    --bs-border-color: #dee2e6;
+}
+
+[data-bs-theme="light"] {
+    --bs-bg-color: #fff;
+    --bs-text-color: #000;
+    --bs-text-muted: #666d82;
+    --bs-border-color: #5a6064;
+}
+
+*{
+    font-family: Poppins,sans-serif;
+}
+body{
+    overflow-x: hidden;
+    font-family: Montserrat,sans-serif;
+    background: var(--bs-bg-color);
+    color: var(--bs-text-color);
+}
+
+a{
+    text-decoration: none;
+}
+
+body, header{
+    background-color: var(--bs-bg-color);
+}
+
+/* #BgGradient{
+    background-image: linear-gradient(to right, var(--bs-primary) , var(--bs-secondary));
+} */
+
+.btn-primary{
+    border-color: var(--bs-bg-color) !important;
+    background-image: linear-gradient(to right, var(--bs-primary) , var(--bs-secondary));
+    color: var(--bs-white) !important;
+    border-radius: 10px;
+    padding: 12px 40px;
+    font-size: 20px;
+}
+
+.btn-outline-primary{
+    background-color: var(--bs-bg-color);
+    border: 3px solid var(--bs-primary)!important;
+    color: var(--bs-white);
+    font-weight: 600;
+    /* border-radius: 20px; */
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active, .btn-outline-primary:focus-visible{
+    background-color: var(--bs-primary);
+    color: var(--bs-white) !important;
+}
+
+.text-primary, .hover-primary:hover{
+    color: var(--bs-primary) !important;
+}
+
+.text-secondary{
+    color: var(--bs-secondary) !important;
+}
+
+.text-light{
+    color: var(--bs-text-muted) !important;
+}
+
+.bg-primary{
+    background: var(--bs-primary) !important;
+}
+
+.bg-secondary{
+    background: var(--bs-secondary-dark) !important;
+}
+
+.stop-primary{
+    stop-color: var(--bs-primary) !important;
+}
+
+.stop-secondary{
+    stop-color: var(--bs-secondary) !important;
+}
+
+.border-primary{
+    border: 1px solid var(--bs-primary);
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin-bottom: 0;
+    color: var(--bs-text-color);
+}
+
+.card{
+    background-color: var(--bs-bg-color);
+    color: var(--bs-text-color);
+    border: 1px solid var(--bs-primary);
+    border-radius: 10px;
+    box-shadow: rgb(28 23 230 / 15%) 0px 25px 50px;
+}
+
+.navbar{
+    background-color: var(--bs-bg-color);
+    z-index: 1;
+}
+
+.nav-link{
+    color: var(--bs-text-color);
+}
+
+.nav-link:hover, .nav-link:focus, .nav-link:active, .nav-link.show{
+    color: var(--bs-primary) !important;
+}
+
+.container{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.brand-logo{
+    width: 8rem;
+    position: absolute;
+    top: 20px;
+    z-index: 1;
+}
+
+@media (min-width: 1000px) {
+    .container{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .brand-logo{
+        width: 10rem;
+        position: absolute;
+        top: 20px;
+        z-index: 1;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .brand-logo{
+        width: 14rem;
+        position: absolute;
+        top: 0px;
+        z-index: 1;
+    }
+}
+
+
+
+.profile-img{
+    width: 75%;
+    border-radius: 50%;
+    float: inline-end;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: var(--bs-bg-color);
+  padding-top: 7px;
+}
+
+@media (min-width: 500px) {
+    .fixed {
+        position: fixed;
+        right: 0rem;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    .loginSection{
+        position: fixed;
+        right: 2%;
+        z-index: 1;
+    }
+}
+
+@media (min-width: 1000px) {
+    .fixed .navbar-nav{
+        margin-left: 4.8rem;
+    }
+
+    .loginSection{
+        right: 2.4%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .fixed .navbar-nav{
+        margin-left: 5.8rem;
+    }
+
+    .loginSection{
+        right: 12%;
+    }
+}
+
+.logo{
+    position: relative;
+    left: 4.4rem;
+}
+
+.hide-logo{
+    display: none;
+    transition: .25s;
+}
+
+.classic-logo{
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+}
+
+.fs-xs{
+    font-size: 11px;
+}
+
+.skill{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.skillCard{
+    border: 2px solid var(--bs-text-muted);
+    color: var(--bs-text-muted);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+#experience{
+    background: linear-gradient(38.73deg, rgba(255, 94, 209, 0.15) 10%, rgba(255, 94, 244, 0) 50%), linear-gradient(141.27deg, rgba(0, 47, 255, 0) 80%, rgba(0, 94, 255, 0.15) 100%);
+    width: 100%;
+    clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 30% 98%, 0px 100%);
+}
+
+
+/* Toggle button */
+#themeToggle {
+    position: relative;
+    display: inline-block;
+    width: 3.125rem;
+    height: 1.5rem;
+    border-radius: 25px;
+    background-color: var(--bs-bg-color);
+    border: 2px solid var(--bs-text-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#themeToggle::before {
+    font-family: "bootstrap-icons";
+    content: "\F496";
+    color: var(--bs-text-color);
+    position: absolute;
+    height: 1.0rem;
+    width: 1.0rem;
+    left: 4px;
+    bottom: 6px;
+    /* background-color: var(--bs-text-color); */
+    border-radius: 50%;
+    transition: transform 0.4s;
+}
+
+#themeToggle[data-theme="dark"] {
+    border: 2px solid var(--bs-text-color);
+}
+
+#themeToggle[data-theme="dark"]::before {
+    transform: translateX(25px);
+    font-family: "bootstrap-icons";
+    content: "\F1D2";
+    color: var(--bs-text-color);
+    left: 2px;
+}
+
+.theme-toggle-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  border-radius: 8px;
+}
